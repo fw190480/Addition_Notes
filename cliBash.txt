@@ -1,0 +1,62 @@
+NOTES
+Why Use the Command Line?
+
+Both the GUI(Graphical User Interface) and CLI(Command Line Interface) are ways you can interact with your computer.
+But when it comes to the command line, once you learn the commands, it is faster and more powerful to navigate and use your computer. This is why many programmers prefer the command line.
+
+Graphical user interfaces make easy tasks easy, while command line interfaces make difficult tasks possible
+
+What is the shell?
+When we speak of the command line, we are really referring to the shell. The shell is a program that takes keyboard commands and passes them to the operating system to carry out.
+Almost all Linux distributions supply a shell program from the GNU Project called bash.
+The name “bash” is an acronym for “Bourne Again SHell”, a reference to the fact bash is an enhanced replacement for sh, the original Unix shell.
+
+Note: Don't be tempted to use Ctrl-c and Ctrl-v to perform copy and paste inside a terminal window. They don't work. These control codes have different meanings to the shell and were assigned many years before the release of Microsoft Windows.
+
+Some Simple Commands
+date - displays current date and time
+
+$ date
+cal - displays a calendar of the current month
+
+$ cal
+df - see the current amount of free space on our disk drives
+
+$ df
+free - display the amount of free memory
+
+$ free
+Flags
+Most command line utilities take parameters using flags.
+Flags usually come in short form (-h) and long form (--help).
+Usually running CMD -h or man CMD will give you a list of the flags the program takes.
+Short flags can usually be combined, running date -u -R is equivalent to running date -uR or date -Ru.
+
+tab - auto fill (very handy)
+
+$ man free
+Shows the manual page for free command
+
+$ date -u -R
+$ date -uR
+$ date -Ru
+Shows the universal date time in RFC format
+
+Navigation
+pwd - print working directory
+cd - change directory
+cd /usr/bin - absolute path
+cd .. - working directory parent
+cd ./bin or cd bin - relative path
+cd or cd ~ - home directory
+cd - - previous working directory
+ls - list files
+ls -l - show detailed info in columns
+ls -a - include hidden files also
+ls -t - sort by last modified date newest first
+ls -S - sort by size
+ls -R - recursively list subdirectories
+ls -F - indicator at the end of each file / if it is a directory
+
+`ls /usr` - specify directory to list   
+ls [-ABCFGHLOPRSTUW@abcdefghiklmnopqrstuwx1]
